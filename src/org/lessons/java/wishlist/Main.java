@@ -19,9 +19,9 @@ public class Main {
                     String name = scanner.nextLine();
                     if(!gift.contains(name)){
                         gift.add(name);
-                        System.out.println("La tua lista dei regali contiene: " + (gift.size()) + " " + "oggetto");
+                        System.out.println("Your gift list contains: " + (gift.size()) + " " + "object");
                     } else {
-                        System.out.println("Il nome del regalo esiste già nella lista");
+                        System.out.println("The gift name already exists in the list");
                     }
                     break;
                 case "no":
@@ -35,7 +35,7 @@ public class Main {
         }
 
 
-        System.out.println("La tua lista dei regali:");
+        System.out.println("Your gift list:");
         for(String element : gift){
             System.out.println(element.toUpperCase());
         }
